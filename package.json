@@ -1,0 +1,27 @@
+{
+  "name": "ai-ecommerce-shopping-assistant",
+  "version": "1.0.0",
+  "description": "Full Stack AI E-Commerce Shopping Assistant with React, Node.js, Express, SQLite, and AI Product Recommendations",
+  "main": "backend/src/server.js",
+  "scripts": {
+    "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "server": "cd backend && npm run dev",
+    "client": "cd frontend && npm run dev",
+    "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
+    "seed": "cd backend && node src/config/db.js",
+    "build": "cd frontend && npm run build"
+  },
+  "keywords": [
+    "ecommerce",
+    "ai-assistant",
+    "react",
+    "express",
+    "sqlite",
+    "fullstack"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
